@@ -41,27 +41,47 @@ html,body {
         h1{
             /* cambia todos los encabezados h1 en el doc. */
         font-size: 30px;
-        text-align:left;
         }
         h2,h3,h4,h5{
             /* cambia todos los encabezados especificados */
-        text-align: left;
-        color: brown;
         }
 #contents{
     padding-bottom: 100px;
     }
-    #imagenfondo {
+#principal {
+        display:flex;
         width: 100%;
         height: 600px;
         background-image: url(fondo.jpg);
-    }
-    #button{
-    background-color: green;
-    border-radius: 15px;
-    padding: 10px;
-    color:aliceblue;
-    }
+        align-items: center;
+        text-align:right;
+        flex-direction: row-reverse;
+}
+#cabp{
+    margin-right: 50px;
+}
+.contenedorinicial{
+    width: 100%;
+    margin-right: 25px;
+    display:flexbox;
+}
+h1.inicial{
+    text-align: right;
+}
+p.inicial{
+    text-align: right;
+}
+#button{
+    background-color: rgb(0, 187, 0);
+    color:whitesmoke;
+    width: fit-content;
+    padding:10px;
+    border-radius: 20px;    
+}
+#button:hover{
+    background-color: aquamarine;
+    color:black;
+}
         section{
             /* modifica de forma global todas las secciones especificadas */
             margin-top: 10px;
